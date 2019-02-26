@@ -1,8 +1,7 @@
-<<<<<<< HEAD
 ## 项目介绍
 ---
 开发人员：孙钰山
-开发工具：idea2015
+开发工具：idea2015 + maven + mysql
 框架技术：SPring + SpringMVC + MyBatis + easyPoi
 时间：2019-02-25
 
@@ -29,5 +28,3 @@ CREATE TABLE `user` (
 配置Tomcat启动项目即可
 
 ---
-
-=======
