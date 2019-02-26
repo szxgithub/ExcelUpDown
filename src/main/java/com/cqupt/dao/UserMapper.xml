@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!-- 设置为IUserDao接口方法提供sql语句配置 -->
+<mapper namespace="com.cqupt.dao.UserMapper">
+    <select id="selectUser" resultType="com.cqupt.pojo.User" parameterType="Integer">
+        SELECT * FROM user WHERE id = #{id}
+    </select>
+    <select id="selectAllUser" resultType="com.cqupt.pojo.User">
+        select * from user
+    </select>
+    <insert id="importUser">
+        insert into user (username,password) VALUES
+        <foreach collection="list" item="item" index="index" separator=",">
+            (#{item.username},#{item.password})
+        </foreach>
+    </insert>
+</mapper>

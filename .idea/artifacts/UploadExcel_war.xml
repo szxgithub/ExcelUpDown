@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="UploadExcel:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="UploadExcel.war">
+      <element id="artifact" artifact-name="UploadExcel:war exploded" />
+    </root>
+  </artifact>
+</component>
